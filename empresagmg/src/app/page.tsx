@@ -330,6 +330,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="py-20 lg:py-28 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-[2rem] border border-slate-200 shadow-2xl p-8 lg:p-12">
+            <div className="grid lg:grid-cols-[1fr_2fr] gap-10 items-center">
+              <div className="flex items-center justify-center">
+                <div className="flex h-32 w-32 items-center justify-center rounded-3xl bg-gmg-blue/10 text-gmg-blue text-4xl font-bold">
+                  JP
+                </div>
+              </div>
+              <div>
+                <p className="text-sm uppercase tracking-[0.25em] text-gmg-blue font-semibold mb-3">
+                  CEO & Fundador | Grupo Empresarial GMG
+                </p>
+                <h2 className="text-3xl sm:text-4xl font-bold text-gmg-dark mb-4">
+                  Juan Carlos Polanco Blanco
+                </h2>
+                <p className="text-slate-600 text-lg leading-relaxed mb-4">
+                  Ingeniero Industrial y Administrador de Empresas con más de 22 años de experiencia en liderazgo estratégico, gestión de operaciones y desarrollo de negocios.
+                </p>
+                <p className="text-slate-600 text-lg leading-relaxed mb-4">
+                  Actualmente especializándose en un Máster en Big Data y Análisis de Datos por la Universidad de Salamanca, ha dedicado su trayectoria a la creación y expansión de proyectos empresariales sostenibles, liderando Grupo Empresarial GMG bajo una visión de excelencia.
+                </p>
+                <p className="text-slate-600 text-lg leading-relaxed">
+                  Su enfoque combina la optimización de procesos de la ingeniería y la visión directiva con la analítica avanzada de datos para impulsar la transformación digital, la innovación continua y la toma de decisiones estratégicas basadas en datos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="vacantes" className="py-20 lg:py-28 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -506,6 +537,11 @@ export default function HomePage() {
                   </Link>
                 </li>
               </ul>
+              <div className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300">
+                <p className="font-semibold text-white">Juan Carlos Polanco Blanco</p>
+                <p className="mt-1">CEO & Fundador</p>
+                <p className="mt-1">Máster en Big Data y Análisis de Datos, Universidad de Salamanca</p>
+              </div>
             </div>
           </div>
           <div className="border-t border-slate-700 pt-8 text-center text-sm space-y-2">

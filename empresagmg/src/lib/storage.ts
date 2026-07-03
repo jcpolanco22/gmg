@@ -22,7 +22,7 @@ function generarId(): string {
 const SAMPLE_CANDIDATOS: Candidato[] = [
   {
     id: "cand_01",
-    createdAt: "2026-07-03T08:00:00.000Z",
+    createdAt: "2026-06-24T08:00:00.000Z",
     estado: "Nuevo",
     nombre: "Ana",
     apellido: "Gómez",
@@ -52,7 +52,7 @@ const SAMPLE_CANDIDATOS: Candidato[] = [
   },
   {
     id: "cand_02",
-    createdAt: "2026-07-03T08:15:00.000Z",
+    createdAt: "2026-06-25T08:15:00.000Z",
     estado: "Nuevo",
     nombre: "Carlos",
     apellido: "Pérez",
@@ -82,7 +82,7 @@ const SAMPLE_CANDIDATOS: Candidato[] = [
   },
   {
     id: "cand_03",
-    createdAt: "2026-07-03T08:30:00.000Z",
+    createdAt: "2026-06-26T08:30:00.000Z",
     estado: "Nuevo",
     nombre: "María",
     apellido: "López",
@@ -112,7 +112,7 @@ const SAMPLE_CANDIDATOS: Candidato[] = [
   },
   {
     id: "cand_04",
-    createdAt: "2026-07-03T08:45:00.000Z",
+    createdAt: "2026-06-27T08:45:00.000Z",
     estado: "Nuevo",
     nombre: "Andrés",
     apellido: "Martínez",
@@ -142,7 +142,7 @@ const SAMPLE_CANDIDATOS: Candidato[] = [
   },
   {
     id: "cand_05",
-    createdAt: "2026-07-03T09:00:00.000Z",
+    createdAt: "2026-06-28T09:00:00.000Z",
     estado: "Nuevo",
     nombre: "Laura",
     apellido: "Fernández",
@@ -172,7 +172,7 @@ const SAMPLE_CANDIDATOS: Candidato[] = [
   },
   {
     id: "cand_06",
-    createdAt: "2026-07-03T09:15:00.000Z",
+    createdAt: "2026-06-29T09:15:00.000Z",
     estado: "Nuevo",
     nombre: "Pedro",
     apellido: "Santos",
