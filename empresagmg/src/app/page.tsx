@@ -339,7 +339,7 @@ export default function HomePage() {
                 {!ceoImgError ? (
                   <div className="relative h-28 w-28 overflow-hidden rounded-3xl border border-gmg-blue/10 bg-slate-100">
                     <img
-                      src="/ceo.jpg"
+                      src="/ceo.jpeg"
                       alt="Juan Carlos Polanco Blanco"
                       className="h-full w-full object-cover"
                       onError={() => setCeoImgError(true)}
