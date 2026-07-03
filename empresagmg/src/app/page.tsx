@@ -102,6 +102,7 @@ export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [shareModalOpen, setShareModalOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [ceoImgError, setCeoImgError] = useState(false);
 
   const shareUrl =
     typeof window !== "undefined"
@@ -330,30 +331,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-[2rem] border border-slate-200 shadow-2xl p-8 lg:p-12">
-            <div className="grid lg:grid-cols-[1fr_2fr] gap-10 items-center">
+      <section className="py-16 lg:py-20 bg-slate-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-[2rem] border border-slate-200 shadow-2xl p-6 lg:p-10">
+            <div className="grid lg:grid-cols-[1fr_2fr] gap-8 items-center">
               <div className="flex items-center justify-center">
-                <div className="flex h-32 w-32 items-center justify-center rounded-3xl bg-gmg-blue/10 text-gmg-blue text-4xl font-bold">
-                  JP
-                </div>
+                {!ceoImgError ? (
+                  <div className="relative h-28 w-28 overflow-hidden rounded-3xl border border-gmg-blue/10 bg-slate-100">
+                    <img
+                      src="/ceo.jpg"
+                      alt="Juan Carlos Polanco Blanco"
+                      className="h-full w-full object-cover"
+                      onError={() => setCeoImgError(true)}
+                    />
+                  </div>
+                ) : (
+                  <div className="flex h-28 w-28 items-center justify-center rounded-3xl bg-gmg-blue/10 text-gmg-blue text-3xl font-bold">
+                    JP
+                  </div>
+                )}
               </div>
               <div>
-                <p className="text-sm uppercase tracking-[0.25em] text-gmg-blue font-semibold mb-3">
+                <p className="text-xs uppercase tracking-[0.25em] text-gmg-blue font-semibold mb-3">
                   CEO & Fundador | Grupo Empresarial GMG
                 </p>
-                <h2 className="text-3xl sm:text-4xl font-bold text-gmg-dark mb-4">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gmg-dark mb-4">
                   Juan Carlos Polanco Blanco
                 </h2>
-                <p className="text-slate-600 text-lg leading-relaxed mb-4">
+                <p className="text-slate-600 text-base leading-relaxed mb-4">
                   Ingeniero Industrial y Administrador de Empresas con más de 22 años de experiencia en liderazgo estratégico, gestión de operaciones y desarrollo de negocios.
                 </p>
-                <p className="text-slate-600 text-lg leading-relaxed mb-4">
+                <p className="text-slate-600 text-base leading-relaxed">
                   Actualmente especializándose en un Máster en Big Data y Análisis de Datos por la Universidad de Salamanca, ha dedicado su trayectoria a la creación y expansión de proyectos empresariales sostenibles, liderando Grupo Empresarial GMG bajo una visión de excelencia.
-                </p>
-                <p className="text-slate-600 text-lg leading-relaxed">
-                  Su enfoque combina la optimización de procesos de la ingeniería y la visión directiva con la analítica avanzada de datos para impulsar la transformación digital, la innovación continua y la toma de decisiones estratégicas basadas en datos.
                 </p>
               </div>
             </div>
