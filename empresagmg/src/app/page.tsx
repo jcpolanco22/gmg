@@ -546,11 +546,6 @@ export default function HomePage() {
                   </Link>
                 </li>
               </ul>
-              <div className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300">
-                <p className="font-semibold text-white">Juan Carlos Polanco Blanco</p>
-                <p className="mt-1">CEO & Fundador</p>
-                <p className="mt-1">Máster en Big Data y Análisis de Datos, Universidad de Salamanca</p>
-              </div>
             </div>
           </div>
           <div className="border-t border-slate-700 pt-8 text-center text-sm space-y-2">
