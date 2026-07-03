@@ -36,11 +36,11 @@ Abre http://localhost:3000
 
 ## Variables de entorno
 
-Copia `.env.local` (ya incluido) o crea uno propio con las credenciales del panel admin:
+Copia `.env.local` (o crea uno propio) con las credenciales del panel admin:
 
 ```
-NEXT_PUBLIC_ADMIN_USER=admin
-NEXT_PUBLIC_ADMIN_PASS=admin123
+NEXT_PUBLIC_ADMIN_USER=administrator
+NEXT_PUBLIC_ADMIN_PASS=admin-gmg-4321
 ```
 
 > Importante: cambia estas credenciales antes de desplegar a producción. No dejes `.env.local` en un repositorio público — está incluido en `.gitignore` por defecto.

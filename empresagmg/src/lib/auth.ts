@@ -1,9 +1,9 @@
 // Autenticación simple para el panel admin, basada en sessionStorage.
 //
 // NOTA DE SEGURIDAD:
-// - Las credenciales están definidas en variables de entorno (ver .env.local).
-// - Por defecto se usa admin / admin123 tal como se solicitó, pero se
-//   recomienda cambiarlas antes de pasar a producción real.
+// - Las credenciales pueden definirse con variables de entorno públicas
+//   `NEXT_PUBLIC_ADMIN_USER` y `NEXT_PUBLIC_ADMIN_PASS`.
+// - Por defecto se usa administrator / admin-gmg-4321 para esta demo.
 // - sessionStorage protege solo del lado del cliente: cualquiera con acceso
 //   a las devtools del navegador podría, en teoría, alterar el estado de
 //   sesión. Para un entorno de producción con datos sensibles, lo ideal es
@@ -11,8 +11,8 @@
 
 const SESSION_KEY = "gmg_admin_session";
 
-const ADMIN_USER = process.env.NEXT_PUBLIC_ADMIN_USER ?? "admin";
-const ADMIN_PASS = process.env.NEXT_PUBLIC_ADMIN_PASS ?? "admin123";
+const ADMIN_USER = process.env.NEXT_PUBLIC_ADMIN_USER || "administrator";
+const ADMIN_PASS = process.env.NEXT_PUBLIC_ADMIN_PASS || "admin-gmg-4321";
 
 function isBrowser() {
   return typeof window !== "undefined";

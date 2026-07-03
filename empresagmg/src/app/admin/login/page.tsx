@@ -39,6 +39,9 @@ export default function AdminLoginPage() {
         <p className="mt-1 text-center text-sm text-slate-400">
           EmpresaGMG · Acceso restringido
         </p>
+        <p className="mt-2 text-center text-xs text-slate-500">
+          Demo: administrator / admin-gmg-4321
+        </p>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-4">
           <div>
